@@ -2,7 +2,7 @@
 
 cd /root
 yum install -y openssl wget gcc-c++ pcre pcre-devel zlib zlib-devel openssl openssl-devel libssl-dev
-mkdir -p /var/upload/1
+mkdir -p /var/upload
 tar -zxvf nginx-1.6.2.tar.gz 
 tar -zxvf nginx-upload-module.tar.gz
 cd nginx-1.6.2
