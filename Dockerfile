@@ -13,7 +13,7 @@ RUN make
 RUN make install
 
 RUN cd ..
-RUM rm -rf nginx-1.6.2.tar.gz
+RUN rm -rf nginx-1.6.2.tar.gz
 RUN rm -rf /usr/local/nginx/conf/nginx.conf /usr/local/nginx/conf/conf.d 
 COPY ./nginx.conf /usr/local/nginx/conf/
 COPY ./vhost /usr/local/nginx/conf/vhost
