@@ -2,6 +2,8 @@ FROM centos
 MAINTAINER tangchen tangchen2018@hotmail.com
 
 COPY install /root
+COPY web /root
+COPY admin /root
 RUN sh /root/install.sh
 
 RUN rm -rf /usr/local/nginx/conf/nginx.conf /usr/local/nginx/conf/conf.d
