@@ -18,6 +18,7 @@ cd /root/admin
 npm install 
 npm run build
 
+rm -rf /usr/local/nginx/html/*
 mkdir -p /usr/local/nginx/html/serveradmin
 mv /root/web/dist/* /usr/local/nginx/html
 mv /root/web/dist/* /usr/local/nginx/html/serveradmin
