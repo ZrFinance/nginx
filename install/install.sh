@@ -16,6 +16,7 @@ ln -s /usr/local/node/bin/node /usr/local/bin/node
 ln -s /usr/local/node/bin/npm /usr/local/bin/npm
 npm cache verify
 npm install -g cnpm --registry=https://registry.npm.taobao.org
+ln -s /usr/local/node/bin/cnpm /usr/bin/cnpm
 
 cd /root/web && cnpm install && cnpm run build
 cd /root/admin && cnpm install && cnpm run build 
